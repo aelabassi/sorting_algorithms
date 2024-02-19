@@ -5,6 +5,9 @@ gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 0-bubble_sort.c 0-main.c print_a
 main2(){
     gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 1-main.c 1-insertion_sort_list.c print_list.c -o insertion
 }
+main3(){
+    gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 2-main.c 2-selection_sort.c print_array.c -o select
+}
 
 if [ $1 -eq 1 ]
 then 
@@ -12,6 +15,9 @@ then
 elif [ $1 -eq 2 ]
 then
     main2
+elif [ $1 -eq 3 ]
+then
+    main3
 else
     echo "invalid option"
 fi
