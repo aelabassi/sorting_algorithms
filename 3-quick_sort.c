@@ -40,7 +40,7 @@ void Quick(int *array, int start, int end, size_t size)
 {
 	int pindex;
 
-	if (array == NULL)
+	if (array == NULL || size < 2)
 	{
 		return;
 	}
