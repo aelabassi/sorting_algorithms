@@ -13,11 +13,6 @@ int lomoto_partition(int *array, int start, int end)
 	int pindex = start;
 	int i, tmp;
 
-	if (array == NULL)
-	{
-		return (-1);
-	}
-
 	for (i = start; i < end; i++)
 	{
 		if (array[i] <= pivot)
@@ -44,6 +39,11 @@ int lomoto_partition(int *array, int start, int end)
 void Quick(int *array, int start, int end, size_t size)
 {
 	int pindex;
+
+	if (array == NULL)
+	{
+		return;
+	}
 
 	if (start < end)
 	{
