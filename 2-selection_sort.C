@@ -12,23 +12,23 @@ size_t tmp;
 
 if (array == NULL)
 {
-    return;
+return;
 }
 
 for (i = 0; i < size - 1; i++)
 {
-    imin = i;
-    for (j = i + 1; j < size; j++)
-    {
-        if (array[i] < array[imin])
-        {
-            imin = j;
-        }
-        tmp = array[i];
-        array[i] = array[imin];
-        array[imin] = tmp;
-        print_array(array, size);
-    }
+imin = i;
+for (j = i + 1; j < size; j++)
+{
+if (array[i] < array[imin])
+{
+imin = j;
+}
+tmp = array[i];
+array[i] = array[imin];
+array[imin] = tmp;
+print_array(array, size);
+}
 }
 
 }
