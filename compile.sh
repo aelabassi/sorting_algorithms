@@ -8,6 +8,9 @@ main2(){
 main3(){
     gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 2-main.c 2-selection_sort.c print_array.c -o select
 }
+main4(){
+    gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 3-main.c 3-quick_sort.c print_array.c -o quick
+}
 
 if [ $1 -eq 1 ]
 then 
@@ -18,6 +21,9 @@ then
 elif [ $1 -eq 3 ]
 then
     main3
+elif [ $1 -eq 4 ]
+then
+    main4
 else
     echo "invalid option"
 fi
