@@ -24,10 +24,13 @@ if (array[i] < array[imin])
 {
 imin = j;
 }
+if (array[i] != array[imin])
+{
 tmp = array[i];
 array[i] = array[imin];
 array[imin] = tmp;
 print_array(array, size);
+}
 }
 }
 
