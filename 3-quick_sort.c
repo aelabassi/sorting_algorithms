@@ -47,8 +47,8 @@ void Quick(int *array, int start, int end, size_t size)
 
 	if (start < end)
 	{
-		print_array(array, size);
 		pindex = lomoto_partition(array, start, end);
+		print_array(array, size);
 		Quick(array, start, pindex - 1, size);
 		Quick(array, pindex + 1, end, size);
 	}
