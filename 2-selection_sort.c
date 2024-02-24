@@ -20,18 +20,15 @@ for (i = 0; i < size - 1; i++)
 imin = i;
 for (j = i + 1; j < size; j++)
 {
-if (array[i] < array[imin])
+if (array[j] < array[imin])
 {
 imin = j;
 }
-if (array[i] != array[imin])
-{
+}
 tmp = array[i];
 array[i] = array[imin];
 array[imin] = tmp;
 print_array(array, size);
-}
-}
 }
 
 }
